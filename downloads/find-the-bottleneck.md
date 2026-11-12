@@ -151,7 +151,7 @@ For each step of each case:
 
 Also record total new arrivals and correctly completed cases over the **same reporting period**.
 
-**Download the companion template:** [Process measurement CSV](../process-measurement-template.csv) — on the hosted resource page, use the Measurement Sheet button. (Within this download folder, the CSV is `process-measurement-template.csv`.)
+**Download the companion template:** [Process measurement CSV](./process-measurement-template.csv) — on the hosted resource page, use the Measurement Sheet button. (Within this download folder, the CSV is `process-measurement-template.csv`.)
 
 ### Compute five practical indicators
 
