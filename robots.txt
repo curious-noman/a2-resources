@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://curious-noman.github.io/a2-resources/sitemap.xml
