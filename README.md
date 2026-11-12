@@ -20,10 +20,11 @@ The brand comes from `curious-noman/agentic-agency`, specifically `src/app/(app)
 
 ## Features
 
-- Static, responsive homepage with searchable category filters and three resource cards.
-- Three dedicated, search-indexable resource landing pages, each with twenty actionable concepts/checks.
-- Downloadable Markdown checklists.
-- Interactive checkboxes with browser-local progress, print, and reset.
+- Static, responsive homepage highlighting the first published resource, with search and category filtering.
+- **Find the Bottleneck**: an in-depth workflow diagnosis built around Value Stream Mapping, Theory of Constraints, 5 Whys, and DMAIC.
+- Worked quote-approval example, adjustable capacity screening calculator, practical root-cause table, improvement plan, and local-progress checklist.
+- Downloadable Markdown field guide and blank CSV process measurement log.
+- Three earlier sample landing pages are kept as **draft templates** but are not listed in the public collection and have noindex metadata.
 - Basic SEO titles, canonical links, sitemap, and robots.txt.
 - GitHub Actions workflow for deployment to GitHub Pages.
 - No runtime dependencies, database, or build step.
@@ -32,12 +33,16 @@ The brand comes from `curious-noman/agentic-agency`, specifically `src/app/(app)
 
 ```
 index.html                      Resource directory
-r/before-adding-ai/index.html   AI adoption checklist
-r/vibecoded-app-launch/index.html
-r/ai-concepts-field-guide/index.html
-downloads/*.md                  Downloadable guides
-assets/styles.css               Agentic Agency-themed design
-assets/site.js                  Search, filtering, theme, progress
+r/find-the-bottleneck/index.html    First published field guide
+r/before-adding-ai/index.html       Draft sample; noindex
+r/vibecoded-app-launch/index.html   Draft sample; noindex
+r/ai-concepts-field-guide/index.html Draft sample; noindex
+downloads/find-the-bottleneck.md   Downloadable companion guide
+downloads/process-measurement-template.csv  Case log for measurement
+assets/styles.css                  Agentic Agency brand baseline
+assets/bottlenecks.css             Field guide styling
+assets/bottlenecks.js              Interactive capacity screening
+assets/site.js                     Search, filtering, theme, progress
 .github/workflows/pages.yml     GitHub Pages deployment
 ```
 
@@ -51,7 +56,7 @@ To move the site to `resources.agenticagency.io`, configure a custom domain and 
 
 ## Editing and publishing resources
 
-Resource HTML currently lives directly in `r/<slug>/index.html`, with matching cards in `index.html` and downloadable files in `downloads/`. A new resource therefore needs a page, a card, and a file. The existing three are editable examples and should be reviewed before public promotion.
+Resource HTML currently lives directly in `r/<slug>/index.html`, with matching cards in `index.html` and downloadable files in `downloads/`. A new resource therefore needs a page, a card, and a file. The first published guide is **Find the Bottleneck**. The three original sample pages remain in the repository as editable templates, are hidden from the resource directory, and are marked noindex until reviewed and published.
 
 ## Lead capture
 
