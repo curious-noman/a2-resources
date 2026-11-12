@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light"><meta name="theme-color" content="#050505">
+<title>Find the Bottleneck: A Practical Workflow Diagnosis Guide | Agentic Agency</title>
+<meta name="description" content="Map your process, measure work and queues, find the real constraint, fix its root cause, and verify results. A practical bottleneck guide with worksheets and a calculator.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Find the Bottleneck | Agentic Agency">
+<meta property="og:description" content="Stop guessing why work is slow. Diagnose the constraint in your workflow, test a fix, and measure what actually improved.">
+<link rel="canonical" href="https://curious-noman.github.io/a2-resources/r/find-the-bottleneck/">
+<link rel="stylesheet" href="../../assets/styles.css">
+<link rel="stylesheet" href="../../assets/bottlenecks.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("a2-resources-theme")==="light"?"light":"dark"}catch(e){}</script>
+</head>
+<body><header class="top"><div class="wrap nav"><a class="identity" href="../../index.html" aria-label="Agentic Agency resource library"><span class="logo-shell"><img class="brand-logo dark-logo" src="https://agenticagency.io/Logo.png" alt="Agentic Agency" width="168" height="43"><img class="brand-logo light-logo" src="https://agenticagency.io/Agency%20Logos-dark.png" alt="Agentic Agency" width="168" height="43"><span class="brand-fallback">AGENTIC <b>AGENCY</b></span></span><span class="suffix">/ RESOURCES</span></a><nav class="nav-items" aria-label="Primary"><a href="../../index.html#library">Resources</a><a class="main-site" href="https://agenticagency.io" target="_blank" rel="noopener noreferrer">Agentic Agency ↗</a><button class="theme" id="theme-toggle" aria-label="Switch to light mode" title="Toggle theme">◐</button></nav></div></header>
+<main class="wrap" data-guide="find-the-bottleneck">
+<nav class="crumb" aria-label="Breadcrumb"><a href="../../index.html">Resources</a> / Process improvement / Bottleneck diagnosis</nav>
+<section class="field-hero" aria-labelledby="guide-title"><div>
+<div class="meta"><span class="tag">Process improvement</span><span>Free field guide + worksheets</span><span>20–30 MIN</span></div>
+<div class="field-eyebrow field-hero-label">/// YOUR TEAM ISN'T NECESSARILY SLOW</div>
+<h1 id="guide-title">Find the <span class="accent">bottleneck.</span><br>Fix the right thing.</h1>
+<p class="field-subtitle">A step-by-step method to discover where work really gets stuck, why it happens, and what to change—before you buy another tool or add more AI.</p>
+<div class="guide-actions"><a class="btn" href="#start">Start the diagnosis ↓</a><a class="btn alt" href="../../downloads/find-the-bottleneck.md" download>↓ Download the field guide</a></div>
+<p class="note">Free, no email required. Includes a measurement template and an improvement worksheet.</p>
+</div><div class="field-visual" aria-label="A quotation workflow showing approval as the constrained step">
+<div class="field-visual-title">PROCESS MONITOR <small>DEMO / QUOTE WORKFLOW</small></div>
+<div class="flow-line"><div class="flow-node"><small>01 / DRAFT</small><b>20</b><span>capacity / day</span></div><span class="arrow">→</span><div class="flow-node bottleneck"><small>02 / APPROVE</small><b>08</b><span>capacity / day</span></div><span class="arrow">→</span><div class="flow-node"><small>03 / SEND</small><b>16</b><span>capacity / day</span></div></div>
+<div class="queue-warning"><span>● CONSTRAINT DETECTED</span><b>+4 quotes/day</b><small>12 arriving · 8 approvable</small></div>
+<div class="field-terminal-footer">SIMPLIFIED EXAMPLE / STEADY DAILY VOLUME</div>
+</div></section>
+<section class="field-banner" aria-label="Overview of the method"><span class="eyebrow">THE FOUR-PART METHOD FROM THE REEL</span><div class="four-steps"><div><b>01</b><strong>Map</strong><small>See the whole process</small></div><div><b>02</b><strong>Measure</strong><small>Find where work piles up</small></div><div><b>03</b><strong>Fix</strong><small>Address the limiting cause</small></div><div><b>04</b><strong>Repeat</strong><small>Verify and find the next constraint</small></div></div><p>The guide expands these four actions using Value Stream Mapping, Theory of Constraints, 5 Whys and DMAIC.</p></section>
+<div class="field-layout" id="start">
+<article class="field-content">
+<section class="field-section" id="understand"><div class="field-eyebrow">BEFORE YOU START</div><h2>What counts as a bottleneck?</h2>
+<p>A bottleneck is the part of a system that limits how quickly the whole process can produce a useful result. In service work, it can be a person, approval rule, queue, missing document, shared resource, or an external dependency.</p>
+<div class="field-insight"><strong>Important distinction</strong><p>The longest wait is a clue, not proof. A policy that only releases approvals on Fridays can create a long queue even when reviewers have enough total capacity. Likewise, one overloaded step may limit output even if its tasks are individually quick.</p></div>
+<p><strong>Don't optimize every activity.</strong> If drafting can handle 20 quotations a day, review handles 8, and sending handles 16, then review limits the end-to-end capacity to about 8 a day—provided the steps are sequential and the figures reflect realistic effective capacity.</p>
+<p>Making drafting faster can raise unfinished work and waiting without increasing completed quotes. It does not automatically lower throughput; the problem is local optimization without improving overall flow.</p>
+</section>
+<section class="field-section" id="scope"><div class="field-eyebrow">FIELD STEP 01</div><h2>Choose one process and define success.</h2><p class="field-intro">A useful diagnosis starts with a clear boundary. Pick one workflow, not an entire department.</p>
+<div class="field-card"><h3>Write a process statement</h3><p><b>When</b> [trigger happens], <b>we</b> [steps] <b>so that</b> [customer outcome happens].</p><p class="field-example">Example: “When a prospect requests pricing, we prepare, approve, and send an accurate quote so they can decide.”</p></div>
+<div class="field-grid-two"><div class="field-mini"><b>START</b><span>What exact event starts the clock? E.g. inquiry received.</span></div><div class="field-mini"><b>END</b><span>What customer-visible output ends it? E.g. approved quote sent.</span></div><div class="field-mini"><b>UNIT OF WORK</b><span>One quote, one invoice, one onboarding case—not a vague task.</span></div><div class="field-mini"><b>SUCCESS MEASURE</b><span>End-to-end lead time, completed outputs per week, and accuracy.</span></div></div>
+<p><strong>Scope test:</strong> Can you follow a single case from start to finish and name who owns each handoff? If not, narrow the process further.</p>
+</section>
+<section class="field-section" id="map"><div class="field-eyebrow">FIELD STEP 02</div><h2>Map what actually happens.</h2><p class="field-intro">Use a simple current-state Value Stream Map: steps, handoffs, queues and rework—not your ideal policy document.</p>
+<div class="field-card"><div class="field-eyebrow">QUOTE PROCESS / CURRENT STATE</div>
+<div class="stage-map"><div><strong>Request</strong><small>Sales inbox</small></div><em>→</em><div><strong>Draft</strong><small>Sales coordinator</small></div><em>→</em><div class="danger"><strong>Review</strong><small>Manager inbox</small></div><em>→</em><div><strong>Send</strong><small>Sales coordinator</small></div></div>
+<p class="field-example">At the review handoff, record: when the quote arrived, when review started, when it finished, and whether it came back for rework.</p></div>
+<ol class="field-ordered"><li>Follow 5 recent examples with the people who do the work.</li><li>Draw every step and handoff, including email, spreadsheet, CRM and manual approval.</li><li>Mark each queue (waiting), touch time (active work), rework loop and blocked step.</li><li>Ask “What really happens when inputs are missing or someone is away?”</li></ol>
+<div class="field-insight"><strong>A useful map includes time.</strong><p>“Draft → Approve → Send” is a start. A diagnostic map adds how long each step works and how long a case waits before it starts.</p></div>
+</section>
+<section class="field-section" id="measure"><div class="field-eyebrow">FIELD STEP 03</div><h2>Measure flow, not busyness.</h2><p class="field-intro">Use a small, honest data sample before assigning blame. Separate active processing from waiting and rework.</p>
+<div class="field-metrics"><div><span>LEAD TIME</span><strong>End to end</strong><small>From request received to quote sent, including waits.</small></div><div><span>TOUCH TIME</span><strong>Actual work</strong><small>Minutes spent producing or checking the quote.</small></div><div><span>WIP / QUEUE</span><strong>Unfinished work</strong><small>How many cases are waiting, and how old are they?</small></div><div><span>THROUGHPUT</span><strong>Finished units</strong><small>How many correct quotes reach customers per day?</small></div></div>
+<h3>Collect a defensible baseline</h3>
+<p>Start with 10–20 comparable cases if you have them; use a longer period when volume is low or work varies greatly. For each step, log arrival time, work start time, completion time, whether it needed rework, and the reason for any hold. Collect demand arrivals and finished output for the same period.</p>
+<div class="table-scroll"><table class="field-table"><thead><tr><th>Step</th><th>Effective capacity*</th><th>Typical queue</th><th>Evidence to collect</th></tr></thead><tbody><tr><td>Draft quote</td><td>20/day</td><td>Usually short</td><td>Draft timestamps</td></tr><tr class="highlight"><td>Approve quote</td><td>8/day</td><td>Growing</td><td>Review queue, age and rework</td></tr><tr><td>Send quote</td><td>16/day</td><td>Usually short</td><td>Approval-to-send time</td></tr></tbody></table></div>
+<p class="fineprint">*Illustrative daily capacity, not a measured industry benchmark. Measure effective capacity after meetings, exceptions, quality checks and real availability.</p>
+<div class="download-strip"><div><strong>Get the raw measurement template</strong><span>Copy into Excel, Google Sheets or your CRM export workflow.</span></div><a class="btn alt" href="../../downloads/process-measurement-template.csv" download>↓ Download CSV</a></div>
+<div class="field-insight"><strong>One formula worth knowing: Little's Law</strong><p>For a reasonably stable, consistently measured workflow: <code>average WIP = throughput rate × average lead time</code>. Example: 24 unfinished quotes ÷ 8 completed quotes/day ≈ 3 working days average lead time. <b>Do not treat this as a reliable forecast when the queue is continuously growing.</b></p></div>
+</section>
+<section class="field-section" id="confirm"><div class="field-eyebrow">FIELD STEP 04</div><h2>Locate the system constraint.</h2><p class="field-intro">Look for where work waits persistently and where sustainable capacity fails to match the work arriving.</p>
+<h3>Use three checks together</h3>
+<ol class="field-ordered"><li><strong>Queue trend:</strong> Is the waiting pile repeatedly growing rather than occasionally spiking?</li><li><strong>Capacity and demand:</strong> Can the step handle the average incoming workload, including variation and rework?</li><li><strong>Downstream evidence:</strong> Are later steps often waiting for this step, while earlier steps keep producing more?</li></ol>
+<p>Check age of the oldest item, priority changes, batching, shared staff, unavailable inputs, and rework. A visible queue can be a symptom of a different constraint, so confirm against actual case timestamps and conversations.</p>
+<div class="calculator" id="capacity-tool">
+<div class="calc-top"><div><span class="field-eyebrow">/// CAPACITY SCREENING TOOL</span><h3>Where would work pile up?</h3><p>Enter comparable daily rates for a simple sequential process.</p></div><span class="tag">INTERACTIVE</span></div>
+<div class="calc-demand"><label for="demand">New work arriving each day</label><input id="demand" type="number" inputmode="decimal" min="0" max="100000" step="0.5" value="12"></div>
+<div class="calc-grid">
+<div><label for="stage-1-name">Step 1</label><input id="stage-1-name" maxlength="40" value="Draft quotes"><label for="stage-1">Capacity/day</label><input id="stage-1" type="number" inputmode="decimal" min="0" max="100000" step="0.5" value="20"></div>
+<div><label for="stage-2-name">Step 2</label><input id="stage-2-name" maxlength="40" value="Approve quotes"><label for="stage-2">Capacity/day</label><input id="stage-2" type="number" inputmode="decimal" min="0" max="100000" step="0.5" value="8"></div>
+<div><label for="stage-3-name">Step 3</label><input id="stage-3-name" maxlength="40" value="Send quotes"><label for="stage-3">Capacity/day</label><input id="stage-3" type="number" inputmode="decimal" min="0" max="100000" step="0.5" value="16"></div>
+</div>
+<div class="calc-out"><div><small>LIMITING STEP</small><strong id="limiting-stage">Approve quotes</strong></div><div><small>EST. FINISHED/DAY</small><strong id="effective-output">8</strong></div><div><small>QUEUE CHANGE/DAY*</small><strong id="queue-growth">+4</strong></div></div>
+<div class="calc-meter" id="calc-meter" aria-label="Relative stage capacities"></div>
+<p class="fineprint" id="calc-explanation">Approval is the lowest-capacity stage. At 12 arriving and 8 finished per day, unfinished work would accumulate by about 4 daily.</p>
+<p class="fineprint">*Screening estimate only: assumes one common unit, a sequential process, sustained rates, sufficient input and no losses or complex routing. In real work, variability, scheduling and rework matter. Queue growth is system-wide unfinished work, not a precise forecast for one inbox.</p>
+</div>
+<p><strong>Decision rule:</strong> If demand exceeds the limiting step's sustainable capacity, capacity is a likely constraint. If all capacities exceed demand but waiting is still high, investigate <em>batching, scheduling, prioritization, handoffs and variability</em>.</p>
+</section>
+<section class="field-section" id="root-cause"><div class="field-eyebrow">FIELD STEP 05</div><h2>Ask why the work is stuck.</h2><p class="field-intro">Use 5 Whys to investigate the mechanism, then verify the answers using records and the people involved.</p>
+<div class="why-stack">
+<div><b>WHY 1</b><span>Why are quotes sent late?</span><strong>They wait for approval.</strong></div>
+<div><b>WHY 2</b><span>Why does approval have a queue?</span><strong>The manager completes about 8 reviews while 12 arrive daily.</strong></div>
+<div><b>WHY 3</b><span>Why only 8?</span><strong>Reviews require repeated manual checks and context gathering.</strong></div>
+<div><b>WHY 4</b><span>Why is context missing?</span><strong>The quote template does not capture standard risk and pricing criteria.</strong></div>
+<div><b>WHY 5</b><span>Why not?</span><strong>Approval rules and templates haven't been reviewed as the workload grew.</strong></div>
+</div>
+<p class="fineprint">This chain is a hypothesis for the teaching example, not a verified diagnosis. Real workflows can have several causes. Interview staff, inspect rejected quotes, and compare the policy with actual review history before changing controls.</p>
+<h3>Which type of cause did you find?</h3>
+<div class="cause-grid"><div><b>POLICY</b><span>Too many mandatory approvals?</span></div><div><b>INFORMATION</b><span>Missing or inconsistent inputs?</span></div><div><b>CAPACITY</b><span>Not enough effective review time?</span></div><div><b>BATCHING</b><span>Work held for daily or weekly runs?</span></div><div><b>QUALITY</b><span>Rework consuming capacity?</span></div><div><b>DEPENDENCY</b><span>Waiting for another team or vendor?</span></div></div>
+</section>
+<section class="field-section" id="improve"><div class="field-eyebrow">FIELD STEP 06</div><h2>Fix the constraint, not the symptom.</h2><p class="field-intro">Theory of Constraints gives a practical order of operations. Don't jump straight to buying software.</p>
+<div class="toc-steps">
+<div><b>01 / IDENTIFY</b><div><h3>Locate the true limiting point</h3><p>Use measured output, queues, and demand. In the example, approval is the candidate constraint.</p></div></div>
+<div><b>02 / EXPLOIT</b><div><h3>Get more from the existing constraint</h3><p>Remove duplicate checks, standardize the required information, reserve review time, and prevent incomplete submissions from reaching the reviewer.</p></div></div>
+<div><b>03 / SUBORDINATE</b><div><h3>Align surrounding work</h3><p>Don't push extra drafts into the same queue. Prioritize complete, ready-to-review requests and limit unnecessary WIP.</p></div></div>
+<div><b>04 / ELEVATE</b><div><h3>Increase capacity only if needed</h3><p>Consider delegation within approved limits, a second qualified reviewer, tooling, or automation with appropriate human oversight.</p></div></div>
+<div><b>05 / REPEAT</b><div><h3>Find the next constraint</h3><p>Once approval is no longer limiting, examine the next queue. The bottleneck may move to drafting, delivery, or even demand.</p></div></div>
+</div>
+<h3>Which intervention should you test first?</h3>
+<div class="table-scroll"><table class="field-table"><thead><tr><th>Symptom</th><th>Possible first experiment</th><th>Guardrail</th></tr></thead><tbody>
+<tr><td>Repeated missing details</td><td>Required intake fields and standardized handoff</td><td>Don't block legitimate exceptions</td></tr>
+<tr><td>Manager reviews everything</td><td>Document approval thresholds for low-risk cases</td><td>Keep legal, financial and compliance controls</td></tr>
+<tr><td>Work waits for batch review</td><td>Shorter, more frequent approval windows</td><td>Don't increase interruptions excessively</td></tr>
+<tr><td>Manual copy/paste</td><td>Use a rule-based integration or automation</td><td>Log errors and make corrections easy</td></tr>
+<tr><td>Expert judgment actually needed</td><td>Protect reviewer time or add qualified capacity</td><td>Retain accountability and review quality</td></tr>
+</tbody></table></div>
+<div class="field-insight"><strong>Where AI belongs</strong><p>Only consider it after locating the cause. AI might help summarize documents or prepare complete review packets. It should not silently approve consequential exceptions. If a fixed rule works, a rule is usually easier to verify and maintain.</p></div>
+</section>
+<section class="field-section" id="pilot"><div class="field-eyebrow">FIELD STEP 07</div><h2>Prove the change and keep watching.</h2><p class="field-intro">Use DMAIC thinking: measure the baseline, change one thing, compare fairly, control what works.</p>
+<ol class="field-ordered"><li><strong>Baseline:</strong> Record arrivals, completions, oldest waiting item, median/p90 lead time and rework rate for a representative period.</li><li><strong>Pilot:</strong> Choose one change, one owner, a clear start date and a defined group of similar cases.</li><li><strong>Compare:</strong> Did more correct work reach the customer? Did the queue shrink? Did rework or risk increase?</li><li><strong>Standardize:</strong> Update the process map, roles, rules, exception handling and monitoring.</li><li><strong>Repeat:</strong> Recheck the biggest queue because improvement may reveal a new constraint.</li></ol>
+<div class="field-card"><div class="field-eyebrow">HYPOTHETICAL IMPROVEMENT</div><h3>What changes if approvals reach 15 per day?</h3><p>With 12 new requests per day and the same other-stage capacities (20 drafting, 16 sending), the system could now keep up with new demand. If an existing 20-quote backlog remains and approval truly has 3 spare slots/day, that backlog would take approximately 7 working days to clear, assuming the inputs are ready and conditions stay stable.</p><p class="field-example">The goal isn't “reviewers are busier.” It's more accurate quotes delivered on time, with manageable WIP and no degradation in quality.</p></div>
+<div class="download-strip"><div><strong>Log the proposed improvement</strong><span>Use the experiment plan in the field guide to record baseline, hypothesis, owner and results.</span></div><a class="btn alt" href="../../downloads/find-the-bottleneck.md" download>↓ Download guide</a></div>
+</section>
+<section class="field-section" id="worksheet"><div class="field-eyebrow">YOUR COMPLETION CHECKLIST</div><h2>Finish with an evidence-backed action.</h2><p class="field-intro">Work through these nine checkpoints. Your progress stays in this browser—nothing is submitted to a server.</p><ul class="checklist field-checklist"><li><label><input class="check" type="checkbox"><div><strong>01 / Define the customer outcome and start/end of one workflow</strong><span>An example: from a sales request arriving to a quotation being sent.</span></div></label></li>
+<li><label><input class="check" type="checkbox"><div><strong>02 / Map the real path for 5 recent cases</strong><span>Include approvals, waiting, rework, exceptions and handoffs.</span></div></label></li>
+<li><label><input class="check" type="checkbox"><div><strong>03 / Measure arrivals, completions, queue size and time</strong><span>Collect at least 10–20 comparable cases if available; mark estimates clearly.</span></div></label></li>
+<li><label><input class="check" type="checkbox"><div><strong>04 / Verify the constraint with evidence</strong><span>Look for a persistently growing queue and a step whose effective capacity is below demand.</span></div></label></li>
+<li><label><input class="check" type="checkbox"><div><strong>05 / Ask why the constraint is constrained</strong><span>Test policy, batching, missing inputs, skills, availability and rework—not just speed.</span></div></label></li>
+<li><label><input class="check" type="checkbox"><div><strong>06 / Improve the constraint before buying anything</strong><span>Eliminate needless work, standardize inputs and protect focused processing time.</span></div></label></li>
+<li><label><input class="check" type="checkbox"><div><strong>07 / Align upstream and downstream work</strong><span>Limit premature release and avoid moving a growing pile to the next desk.</span></div></label></li>
+<li><label><input class="check" type="checkbox"><div><strong>08 / Pilot one change and monitor results</strong><span>Compare completed output, end-to-end time, oldest open item, quality and exceptions.</span></div></label></li>
+<li><label><input class="check" type="checkbox"><div><strong>09 / Repeat when the queue moves</strong><span>Use the data to identify the next limiting factor without optimizing every step at once.</span></div></label></li></ul></section>
+<section class="field-section" id="next"><div class="field-eyebrow">YOUR OUTPUT</div><h2>One bottleneck. One test. One owner.</h2>
+<div class="field-card"><h3>Complete this sentence</h3><p>“Our <b>[workflow]</b> is delayed at <b>[step]</b>. We think the cause is <b>[evidence-backed reason]</b>. Over <b>[pilot period]</b>, we'll test <b>[change]</b>, owned by <b>[person]</b>, and compare <b>[baseline and outcome metrics]</b>.”</p></div>
+<div class="last-cta"><div class="eyebrow">/// TAKE THE GUIDE WITH YOU</div><h2>Your operations diagnosis kit.</h2><p>Download the field guide, log a real case sample, and return to your process after the pilot.</p><div class="guide-actions"><a class="btn" href="../../downloads/find-the-bottleneck.md" download>↓ Download guide</a><a class="btn alt" href="../../downloads/process-measurement-template.csv" download>↓ Measurement sheet</a><button class="btn alt" type="button" id="print-guide">Print / save PDF</button></div></div>
+</section>
+<section class="field-section sources" id="references"><div class="field-eyebrow">BACKGROUND READING</div><h2>Real frameworks, not invented rules.</h2><ul>
+<li><a href="https://www.lean.org/lexicon-terms/value-stream-mapping/" target="_blank" rel="noopener noreferrer">Lean Enterprise Institute — Value Stream Mapping ↗</a><span>Definitions of process steps, lead time and cycle time.</span></li>
+<li><a href="https://www.tocinstitute.org/five-focusing-steps.html" target="_blank" rel="noopener noreferrer">Theory of Constraints Institute — Five Focusing Steps ↗</a><span>Identify, exploit, subordinate, elevate, repeat.</span></li>
+<li><a href="https://www.ihi.org/library/tools/5-whys-finding-root-cause" target="_blank" rel="noopener noreferrer">Institute for Healthcare Improvement — 5 Whys ↗</a><span>Investigate multiple levels and possible causes.</span></li>
+<li><a href="https://asq.org/quality-resources/sixsigma/tools" target="_blank" rel="noopener noreferrer">American Society for Quality — DMAIC ↗</a><span>Define, measure, analyze, improve, control.</span></li>
+<li><a href="https://learn.ascm.org/sfc/servlet.shepherd/document/download/069R3000006PlDHIA0?operationContext=S1" target="_blank" rel="noopener noreferrer">ASCM — Little&#39;s Law glossary ↗</a><span>Stable-system relationship between WIP, throughput and lead time.</span></li>
+</ul></section>
+</article>
+<aside class="side field-aside" aria-label="Your guide progress"><div class="side-head"><span>YOUR PROGRESS</span><strong id="progress-number">0 / 9</strong></div><div class="progress-track" role="progressbar" aria-label="Checklist progress" aria-valuemin="0" aria-valuemax="9" aria-valuenow="0" id="progress"><span class="progress-fill" id="progress-fill"></span></div><p>Mark the nine checkpoints as you complete your diagnosis.</p><nav class="toc" aria-label="Contents"><div class="eyebrow">JUMP TO</div>
+<a href="#understand">What is a bottleneck?</a><a href="#scope">01 · Scope</a><a href="#map">02 · Map</a><a href="#measure">03 · Measure</a><a href="#confirm">04 · Confirm constraint</a><a href="#root-cause">05 · Find the cause</a><a href="#improve">06 · Improve</a><a href="#pilot">07 · Verify</a><a href="#worksheet">Checklist</a><a href="#references">Sources</a></nav><button id="reset-guide">Reset progress</button></aside>
+</div>
+</main>
+<footer class="foot"><div class="wrap foot-inner"><div><div>Systems Architecture &amp; Automation</div></div><nav><a href="../../index.html#library">All resources</a><a href="https://agenticagency.io" target="_blank" rel="noopener noreferrer">Main website ↗</a><a href="https://agenticagency.io/privacy-policy">Privacy</a></nav><div>© 2026 Agentic Agency</div></div></footer>
+<script defer src="../../assets/site.js"></script><script defer src="../../assets/bottlenecks.js"></script>
+</body></html>
